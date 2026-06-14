@@ -35,7 +35,6 @@ jobs:
       - name: Run Horizon
         env:
           HORIZON_API_KEY: ${{ secrets.HORIZON_API_KEY }}
-          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
         run: uv run horizon --hours 24
 
       - name: Set current date as environment variable
